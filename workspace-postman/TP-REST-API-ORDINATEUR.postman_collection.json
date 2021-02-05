@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "088136d6-0647-455f-a5e1-feb22bf6f5de",
+		"name": "TP-REST-API-ORDINATEUR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-ordinateur-by-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/REST-servicewebtp2/api/ordinateurs/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"REST-servicewebtp2",
+						"api",
+						"ordinateurs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-ordinateur-all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/REST-servicewebtp2/api/ordinateurs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"REST-servicewebtp2",
+						"api",
+						"ordinateurs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-ordinateur",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"marque\": \"ordinateur 1\",\r\n    \"prix\": 333.0\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/REST-servicewebtp2/api/ordinateurs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"REST-servicewebtp2",
+						"api",
+						"ordinateurs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "de48e00e-5c73-4fac-b694-2ed80719eeae",
+		"name": "TP-REST-API-CREADITCARD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-creditcard-by-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/REST-CardValidator-JPA/api/credit-card/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"REST-CardValidator-JPA",
+						"api",
+						"credit-card",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-creditcard-all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/REST-CardValidator-JPA/api/credit-card/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"REST-CardValidator-JPA",
+						"api",
+						"credit-card",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post-creditcard",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"controlNumber\": 111,\r\n    \"expiryDate\": \"EEE\",\r\n    \"number\": \"EEE\",\r\n    \"type\": \"GGGG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/CreditCard-TP-WS/api/credit-card/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"CreditCard-TP-WS",
+						"api",
+						"credit-card",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-creditcard",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"controlNumber\": 111,\r\n    \"expiryDate\": \"QSssssDQSD\",\r\n    \"number\": \"QQQQQ\",\r\n    \"type\": \"QQQQQ\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/REST-CardValidator-JPA/api/credit-card/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"REST-CardValidator-JPA",
+						"api",
+						"credit-card",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-creditcard",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/REST-CardValidator-JPA/api/credit-card/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"REST-CardValidator-JPA",
+						"api",
+						"credit-card",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
